@@ -1,0 +1,67 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#ebe992 10%, #f0dfb2 30%, #cab277 10%, #f6f481 100%);
+  }
+  
+  .bg-gold-500 {
+    background-color: #DAA520;
+  }
+  
+  .bg-gold-600 {
+    background-color: #B8860B;
+  }
+  
+  .hover\:text-gold-500:hover {
+    color: #DAA520;
+  }
+  
+  .hover\:bg-gold-600:hover {
+    background-color: #b8b50b;
+  }
+  
+  #carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-control {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #89aee5;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-control:hover {
+    background-color: #DAA520;
+  }
+  /*djhdjh*/
+  .text-gold-500 {
+    color: #d4af37; /* Gold color */
+  }
+  
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+  
+  .text-gray-700 {
+    color: #4b5563;
+  }
+  
+  .text-gray-900 {
+    color: #1f2937;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  

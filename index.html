@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-white shadow-lg">
+    <div class="text-2xl font-bold text-gray-900">Velvet</div>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:text-gold-500">Home</a></li>
+      <li><a href="#about" class="hover:text-gold-500">About</a></li>
+      <li><a href="#services" class="hover:text-gold-500">Services</a></li>
+      <li><a href="#contact" class="hover:text-gold-500">Contact</a></li>
+    </ul>
+    <button class="px-4 py-2 bg-gold-500 text-white rounded-md hover:bg-gold-600">
+      Get Started
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?luxury');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">
+      <h1 class="text-5xl font-bold">Experience True Luxury</h1>
+      <p class="mt-4 text-lg">Crafted for Elegance and Sophistication</p>
+      <div class="mt-6 space-x-4">
+        <button class="px-6 py-3 bg-gold-500 rounded-md hover:bg-gold-600">Learn More</button>
+        <button class="px-6 py-3 bg-gray-700 rounded-md hover:bg-gray-800">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Testimonials Section -
+  <section class="py-16 px-6 bg-gray-50">
+    <h2 class="text-center text-3xl font-bold mb-12">What Our Clients Say</h2>
+    <div class="relative w-full max-w-4xl mx-auto">
+      <div id="carousel" class="overflow-hidden rounded-md shadow-lg">
+        <div id="carousel-items" class="flex transition-transform duration-500">
+          <div class="min-w-full text-center p-6 bg-white">
+            <p class="italic text-gray-600">"Velvet transformed my experience. Exceptional service and top-notch quality!"</p>
+            <h4 class="mt-4 text-xl font-semibold">- Jane Doe</h4>
+          </div>
+          <div class="min-w-full text-center p-6 bg-white">
+            <p class="italic text-gray-600">"Absolutely stunning! The attention to detail is unmatched."</p>
+            <h4 class="mt-4 text-xl font-semibold">- John Smith</h4>
+          </div>
+          <div class="min-w-full text-center p-6 bg-white">
+            <p class="italic text-gray-600">"An experience like no other. Highly recommended!"</p>
+            <h4 class="mt-4 text-xl font-semibold">- Sarah Lee</h4>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-4 space-x-4">
+        <button class="carousel-control w-4 h-4 rounded-full bg-gray-300" data-slide="0"></button>
+        <button class="carousel-control w-4 h-4 rounded-full bg-gray-300" data-slide="1"></button>
+        <button class="carousel-control w-4 h-4 rounded-full bg-gray-300" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  !-- Contact Section --
+  <section id="contact" class="py-16 px-6">
+    <h2 class="text-center text-3xl font-bold mb-12">Get in Touch</h2>
+    <form id="contactForm" class="max-w-3xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" id="name" placeholder="Full Name" class="p-4 border rounded-md" required>
+        <input type="email" id="email" placeholder="Email Address" class="p-4 border rounded-md" required>
+      </div>
+      <textarea id="message" placeholder="Your Message" class="mt-4 p-4 border rounded-md w-full" required></textarea>
+      <button type="submit" class="mt-4 px-6 py-3 bg-gold-500 text-white rounded-md hover:bg-gold-600">Send Message</button>
+    </form>
+    <div id="successMessage" class="mt-6 text-center text-green-500 hidden">
+      Thank you! Your message has been sent successfully.
+    </div>
+  </section>
+-->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-20">
+    <!-- About Section -->
+    <div class="mb-12 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Velvet Lifestyle</h2>
+      <p class="text-lg text-gray-700 mt-4">
+        2020 was the year Velvet Lifestyle was thought of. Every product at Velvet Lifestyle is hand poured, using true-to-life scents, quality soy wax, and wicks to provide excellent aroma and burn time. All products are made with care in South Africa.
+      </p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="grid lg:grid-cols-3 gap-10">
+      <!-- Soy Wax Candles -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-2xl font-semibold text-gold-500 mb-4">01. Soy Wax Candles</h3>
+        <p class="text-gray-700 mb-2"><strong>Price Range:</strong> R300 - R350</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Merlot</li>
+          <li>Chardonnay</li>
+          <li>Black Raspberry & Vanilla</li>
+          <li>French Lavender</li>
+          <li>Sandalwood & Bergamot</li>
+        </ul>
+      </div>
+
+      <!-- Reed Diffusers -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-2xl font-semibold text-gold-500 mb-4">02. Reed Diffusers</h3>
+        <p class="text-gray-700 mb-2"><strong>Price Range:</strong> R230 - R300</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Merlot</li>
+          <li>Chardonnay</li>
+          <li>Black Raspberry & Vanilla</li>
+          <li>French Lavender</li>
+          <li>Sandalwood & Bergamot</li>
+        </ul>
+      </div>
+
+      <!-- Room & Linen Mist -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-2xl font-semibold text-gold-500 mb-4">03. Room & Linen Mists</h3>
+        <p class="text-gray-700 mb-2"><strong>Price Range:</strong> R200 - R280</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Merlot</li>
+          <li>Chardonnay</li>
+          <li>Black Raspberry & Vanilla</li>
+          <li>French Lavender</li>
+          <li>Sandalwood & Bergamot</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Special Requests -->
+    <div class="mt-12 bg-gray-100 p-6 rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">04. Special Requests</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Large Candles - Price on Request (POR)</li>
+        <li>Non-Scented Candles - POR</li>
+        <li>Personalized Gift Boxes - POR</li>
+        <li>Combo - R700 - R800</li>
+        <li>Combo with Mirror Tray - R900 - R1100</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+   
+<footer class="py-12 bg-gray-900 text-gray-100">
+    <div class="text-center space-y-4">
+      <p>© 2025 Velvet (LuxuryBrand). All rights reserved.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="#" class="hover:text-gold-500">Facebook</a>
+        <a href="#" class="hover:text-gold-500">Instagram</a>
+        <a href="#" class="hover:text-gold-500">Twitter</a>
+      </div>
+      <p class="mt-4 text-sm text-gray-400">Designed with <span class="text-red-500">♥</span> by <span class="font-semibold text-gold-500">MacTechITSolutions</span> </p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
