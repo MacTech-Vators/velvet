@@ -37,6 +37,61 @@ const learnMoreButton = document.querySelector(".bg-gold-500");
 
 
 
+  const orderNowButton = document.getElementById("orderNowButton");
+  const orderModal = document.getElementById("orderModal");
+  const closeOrderModal = document.getElementById("closeOrderModal");
+  const addToCartButton = document.getElementById("addToCartButton");
+  const cartItems = document.getElementById("cartItems");
+  const checkoutButton = document.getElementById("checkoutButton");
+  const productSelect = document.getElementById("productSelect");
+
+  
+  let cart = [];
+
+  
+  orderNowButton.addEventListener("click", () => {
+    orderModal.classList.remove("hidden");
+  });
+
+  
+  closeOrderModal.addEventListener("click", () => {
+    orderModal.classList.add("hidden");
+  });
+
+  
+  addToCartButton.addEventListener("click", () => {
+    const selectedProduct = productSelect.value;
+    cart.push(selectedProduct);
+    renderCart();
+  });
+
+  
+  function renderCart() {
+    cartItems.innerHTML = cart.map((item, index) =>
+      `<li>${item} <button onclick="removeFromCart(${index})" class="text-red-500 ml-2">Remove</button></li>`
+    ).join("");
+  }
+
+ 
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    renderCart();
+  }
+
+ 
+  checkoutButton.addEventListener("click", () => {
+    if (cart.length === 0) {
+      alert("Your cart is empty!");
+    } else {
+      alert(`Order placed: ${cart.join(", ")}`);
+      cart = [];
+      renderCart();
+      orderModal.classList.add("hidden");
+    }
+  });
+
+
+
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
