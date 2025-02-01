@@ -11,19 +11,28 @@
 <body class="bg-gray-50 text-gray-900">
 
   
-  <nav class="flex justify-between items-center p-4 bg-white text-purple">
-    <div class="flex items-center space-x-2">
-      <img src="img/logo.jpg" alt="Website Logo" class="w-16 h-16">
-      <span class="text-xl font-semibold"></span>
+  <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="img/logo.jpg" alt="Logo" class="w-12 h-12 rounded-full">
+        <span class="text-2xl font-bold text-purple-600"></span>
+      </div>
+  
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a></li>
+        <li><a href="#about" class="text-gray-700 hover:text-purple-600 transition">About</a></li>
+        <li><a href="#services" class="text-gray-700 hover:text-purple-600 transition">Services</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a></li>
+      </ul>
+  
+      <button class="block md:hidden text-purple-600 hover:text-purple-800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
     </div>
-    
-    <ul class="flex space-x-4">
-      <li><a href="#home" class="hover:text-gold-400">Home</a></li>
-      <li><a href="#about" class="hover:text-gold-400">About</a></li>
-      <li><a href="#services" class="hover:text-gold-400">Products</a></li>
-      <li><a href="#contact" class="hover:text-gold-400">Contact</a></li>
-    </ul>
   </nav>
+  
   
 
   
