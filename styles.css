@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 
 body {
   font-family: 'Playfair Display', serif;
-  background-image: url('https://images.unsplash.com/photo-1504197906860-da867658e819?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-image: url('https://images.unsplash.com/photo-1549877696-a46dda28ffa8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover; 
   background-position: center; 
   background-attachment: fixed; 
@@ -10,17 +17,16 @@ body {
 }
 
 
-body::after {
+body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: inherit;
   z-index: -1;
 }
-
 
 .bg-gold-500 {
   background-color: #ffc87c;
@@ -31,7 +37,7 @@ body::after {
 }
 
 .hover\:text-gold-500:hover {
-  color: purple;
+  color: whitesmoke;
 }
 
 .hover\:bg-gold-600:hover {
@@ -116,5 +122,5 @@ button:hover {
 
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
-  color: #853a5a;
+  color: black;
 }

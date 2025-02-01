@@ -24,24 +24,17 @@ setInterval(() => {
   updateCarousel();
 }, 5000);
 
+const learnMoreButton = document.querySelector(".bg-gold-500");
+  const learnMoreSection = document.getElementById("learnMoreSection");
 
-const contactButton = document.getElementById('contactButton');
-const contactModal = document.getElementById('contactModal');
-const closeModal = document.getElementById('closeModal');
+  learnMoreButton.addEventListener("click", () => {
+    learnMoreSection.classList.toggle("hidden");
+    learnMoreButton.textContent = learnMoreSection.classList.contains("hidden")
+      ? "Learn More"
+      : "Show Less";
+  });
 
-contactButton.addEventListener('click', () => {
-  contactModal.style.display = 'block';
-});
 
-closeModal.addEventListener('click', () => {
-  contactModal.style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target === contactModal) {
-    contactModal.style.display = 'none';
-  }
-});
 
 
 const contactForm = document.getElementById('contactForm');
@@ -53,29 +46,32 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 const whatsappButton = document.getElementById("whatsappButton");
-  const whatsappContact = document.getElementById("whatsappContact");
-  const whatsappForm = document.getElementById("whatsappForm");
+const whatsappContact = document.getElementById("whatsappContact");
+const whatsappForm = document.getElementById("whatsappForm");
 
-  
-  whatsappButton.addEventListener("click", () => {
-    whatsappContact.classList.toggle("hidden");
-  });
 
-  
-  whatsappForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const message = document.getElementById("whatsappMessage").value;
-    const phoneNumber = "0659987903"; 
+whatsappButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  whatsappContact.classList.toggle("hidden");
+});
 
+
+window.addEventListener("click", (e) => {
+  if (!whatsappContact.contains(e.target) && e.target !== whatsappButton) {
+    whatsappContact.classList.add("hidden");
+  }
+});
+
+
+whatsappForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const message = document.getElementById("whatsappMessage").value.trim();
+  const phoneNumber = "0659987903";
+
+  if (message) {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
-    whatsappContact.classList.add("hidden");
-    whatsappForm.reset();
-  });
-
-  
-  window.addEventListener("click", (e) => {
-    if (!whatsappContact.contains(e.target) && e.target !== whatsappButton) {
-      whatsappContact.classList.add("hidden");
-    }
-  });
+  }
+  whatsappContact.classList.add("hidden");
+  whatsappForm.reset();
+});
